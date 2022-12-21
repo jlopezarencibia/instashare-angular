@@ -3,6 +3,13 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { ThemeSharedModule } from '@abp/ng.theme.shared';
 import { NgxValidateCoreModule } from '@ngx-validate/core';
+import { FeatherModule } from 'angular-feather';
+import { LogIn, UserPlus } from 'angular-feather/icons';
+
+const featherIcons = {
+  LogIn,
+  UserPlus
+};
 
 @NgModule({
   declarations: [],
@@ -10,7 +17,7 @@ import { NgxValidateCoreModule } from '@ngx-validate/core';
     CoreModule,
     ThemeSharedModule,
     NgbDropdownModule,
-    NgxValidateCoreModule
+    FeatherModule.pick(featherIcons)
   ],
   exports: [
     CoreModule,

@@ -8,10 +8,17 @@
     transform: rotate(360deg);
   }
 }
-:root  {
+
+:root {
   --lpx-logo: url('/assets/images/logo/logo-light.png');
   --lpx-logo-icon: url('/assets/images/logo/logo-light-thumbnail.png');
+
+  feather-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
+
 .donut {
   display: inline-block;
   border: 4px solid rgba(0, 0, 0, 0.1);
@@ -28,4 +35,49 @@
     transform: translate(-50%, -50%);
   }
 
+}
+
+.logo-72 {
+  width: 32px;
+  height: 32px;
+}
+
+.bg-navbar-blurry {
+  --bs-bg-opacity: .8;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.btn-navbar-fill {
+  transition: .2s;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  color: rgb(var(--bs-secondary-rgb)) !important;
+  background-color: white !important;
+}
+
+.btn-navbar-fill:hover {
+  transition: .2s;
+  color: rgb(var(--bs-secondary-rgb)) !important;
+  background-color: white !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.btn-navbar {
+  transition: .2s;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  color: rgba(255, 255, 255, .85) !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.btn-navbar:hover {
+  transition: .2s;
+  color: white !important;
+  background-color: rgba(255, 255, 255, .1) !important;
+}
+
+.nav-spacer {
+  padding-top: 6rem;
 }
